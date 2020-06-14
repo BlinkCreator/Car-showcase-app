@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_recycler">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DDD3D3D3"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButtonList"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#DDD3D3D3"
+            android:backgroundTintMode="src_over"
+            android:scaleType="fitCenter"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/arrow"
+            tools:src="@drawable/arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NoResultText"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:gravity="center"
+        android:text="null"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTintMode="multiply"
+    android:foregroundTint="#040404"
+    android:foregroundTintMode="add"
+    android:gravity="center|right"
+    android:orientation="vertical"
+    tools:context=".activity_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DDD3D3D3"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#DDD3D3D3"
+            android:backgroundTintMode="src_over"
+            android:scaleType="fitCenter"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/arrow"
+            tools:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="swipe left to view" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:soundEffectsEnabled="false"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/myViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDD3D3D3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DetailNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:backgroundTint="#FF8888"
+                    android:gravity="center|left"
+                    android:text="The Name"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DetailYearText"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center|left"
+                    android:text="1998"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:text="Decription:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DetailDescText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non purus ante. Morbi consequat risus nec dignissim dignissim. Aliquam erat volutpat. Nunc lacinia erat vel scelerisque iaculis. Nulla et felis faucibus, cursus ligula at, fermentum lorem. Donec ultrices felis turpis, eget gravida libero cursus ut. Duis id tincidunt quam, sed condimentum felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non purus ante. Morbi consequat risus nec dignissim dignissim. Aliquam erat volutpat. Nunc lacinia erat vel scelerisque iaculis. Nulla et felis faucibus, cursus ligula at, fermentum lorem. Donec ultrices felis turpis, eget gravida libero cursus ut. Duis id tincidunt "
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">302</string>
+    <string name="top_picks">Top Picks</string>
+    <string name="hybird_cars">Hybird Cars</string>
+    <string name="petrol_cars">Petrol Cars</string>
+    <string name="electric_cars">Electric Cars</string>
+</resources>

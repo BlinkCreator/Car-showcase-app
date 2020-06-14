@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity_main">
+
+    <LinearLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#DDD3D3D3"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ListButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#0DFFFFFF"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:scaleX="0.6"
+            android:scaleY="0.5"
+            app:srcCompat="@drawable/bars"
+            tools:srcCompat="@drawable/bars" />
+
+        <SearchView
+            android:id="@+id/Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C8C8C8">
+
+        </SearchView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topPicksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Top Picks:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/TopPicksLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/TopPick1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/TopPick2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:padding="0dp" />
+
+        <ImageButton
+            android:id="@+id/TopPick3"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/CatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Categories:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CatElectric"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#DDD3D3D3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/CatElectricImg"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginEnd="10dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/electric" />
+
+            <TextView
+                android:id="@+id/CatElectricTxt"
+                android:layout_width="160dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/electric_cars"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CatHybrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#DDD3D3D3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/CatHybridImg"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginEnd="10dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hybrid" />
+
+            <TextView
+                android:id="@+id/CatHybridTxt"
+                android:layout_width="160dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/hybird_cars"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CatPetrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#DDD3D3D3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/CatPetrolImg"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginEnd="10dp"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/petrol" />
+
+            <TextView
+                android:id="@+id/CatPetrolTxt"
+                android:layout_width="160dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/petrol_cars"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
